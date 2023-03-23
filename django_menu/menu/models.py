@@ -9,7 +9,7 @@ class Menu(models.Model):
     name = models.CharField('Название пункта', max_length=100)
     path = models.CharField('Путь', max_length=255, db_index=True)
     level = models.IntegerField('Уровень', db_index=True)
-    url = models.URLField()
+    url = models.URLField('URL')
 
     class Meta:
         verbose_name = 'Меню'
