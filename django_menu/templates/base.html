@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Меню">
+    <title>Menu app</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        {% include "menu/header.html" %}
+      </nav>
+    </header>
+
+    <main>
+      <p>- - -</p>
+      <nav>
+        {% include "menu/main.html" %}
+        {% include "menu/empty.html" %}
+      </nav>
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+
+</html>
