@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class MenuPath:
-    title: str
+    title_slug: str
     path: str = None
 
 
@@ -11,7 +11,7 @@ def get_item_path(path: str) -> MenuPath | None:
     path = path.strip('/').split('/')[1:]
     if not path:
         return
-    url_path = MenuPath(title=path[0])
+    url_path = MenuPath(title_slug=path[0])
     if len(path) > 1:
         url_path.path = path[1]
     return url_path
