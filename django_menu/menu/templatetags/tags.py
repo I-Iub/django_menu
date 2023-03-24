@@ -5,8 +5,8 @@ from django.http import Http404
 from django.template.context import RequestContext
 from dotenv import load_dotenv
 
-from .utils import MenuPath, extend_by_parents, get_item_path
 from ..models import Menu
+from .utils import MenuPath, extend_by_parents, get_item_path
 
 load_dotenv()
 register = template.Library()
